@@ -1,0 +1,217 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <style>
+        .rest {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-family:DengXian;
+        font-size:120%
+        }
+    </style>
+    <style>
+        #flash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
+
+        #flash-screen img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        #main-content {
+            display: none; /* Initially hidden */
+        }
+        .topnav a {
+          float: left;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 20px;
+          text-decoration: none;
+          font-size: 17px;
+          background-color: rgb(79, 79, 79);
+          margin:0px;
+          font-family: DengXian;
+        }
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        .topnav a.active {
+          background-color: hsl(0, 0%, 0%);
+          color: rgb(255, 255, 255);
+          font-family: DengXian;
+        }
+        </style>
+<style>
+    .basic {
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: 2px solid rgb(255, 255, 255);
+        margin: 20px;
+        padding: 20px;
+        font-family:DengXian;
+        font-size:120%
+    }
+    </style>
+    <style>
+        .b2 {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 20px;
+            padding: 20px;
+            font-family:DengXian;
+            font-size:120%
+            
+        }
+        </style>
+    <style>
+    .heading {
+        background-color: rgb(58, 57, 57);
+        color: white;
+        margin: 20px;
+        padding: 20px;
+        font-family:DengXian;
+        font-size:160%;
+    }
+    </style>
+    <style>
+    .cen {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    </style>
+    <style>
+        .title {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family:DengXian;
+            font-size:300%
+            
+        }
+    </style>
+    <style>
+        .link {
+            background-color: rgb(0, 0, 0);
+            color:white;
+            font-family: DengXian;
+        } 
+    </style>
+<style>
+    body {
+    background-color:grey
+}
+</style>
+<div id="flash-screen">
+    <img src="einstein.png" alt="Flash Image"> <!-- Replace with your image -->
+</div>
+<div class="topnav">
+	<a class="active" href="hmpge.html">Homepage</a>
+	<a href="deltarune.html">Deltarune</a>
+	<a href="lore.html">Lore</a>
+</div>
+<br>
+<br>
+<br>
+<br>
+    <div class="title">Welcome to the Rebase Reality Employee Portal</div>
+    <br>
+    <br>
+    <div><i class="heading" style="margin: 20px; padding: 20px;">Together, we reshape the narrative.</i></div>
+    <br>
+    <div class="basic">A collection of intelligent minds, finding the truth behind history.</div>
+    <div class="heading">Overview</div>
+    <div class="basic">Welcome, valued team member!
+
+        At Rebase Reality, your work is integral to our mission of redefining history and uncovering hidden truths. This portal is your central hub for accessing key resources, updates, and tools to support your contributions.
+</div>
+<div class="heading">What’s New?</div>
+<div class="basic">
+    Project REBASE Status Update: Discover the latest insights from our Reality Adjustment Division.
+    <br>
+    Incident Report Log: Review anomalies flagged during recent investigations.
+    <br>
+    Employee Contributions: See how your colleagues are reshaping timelines.</div>
+</div>
+<div id="output" class="rest" onclick="askUser()">CLASSIFIED</div>
+<script>
+function askUser() {
+    const correctPassword = "404found"; 
+    const userInput = prompt("Enter the password:");
+    
+    if (userInput === null) {
+        document.getElementById("output").textContent = "...";
+    } else if (userInput === correctPassword) { 
+        document.getElementById("output").innerHTML = `
+        <div style="background-color: black; color: white; padding: 20px; font-family: Arial, sans-serif;">
+            <pre>
+                   ==========================================
+                CLASSIFIED MATERIAL
+    ==========================================
+    Project Name: Rebase Reality
+    Clearance Level: Omega-5
+    ------------------------------------------
+
+    True Intentions:
+    ----------------
+    The primary goal of Rebase Reality is to manipulate historical timelines 
+    to ensure the emergence of a singular, controlled narrative. All 
+    deviations or anomalies threatening the established order are erased 
+    or rewritten to maintain coherence within the 'source code.'
+
+    Altered People and Events:
+    --------------------------
+    1. **Leonard A. Whitman**: Pioneer of decentralized AI technologies.
+       - Original Fate: Developed a failsafe to protect humanity.
+       - Altered Fate: Discredited and labeled a fraud in 2016.
+
+    2. **Albert Einstein and the Atomic Bomb**:
+       - Original Timeline: Einstein's discoveries inspired peaceful scientific advancement.
+       - Altered Timeline: Misattributed as the father of the atomic bomb to ensure public 
+         acceptance of wartime decisions. The Manhattan Project's real catalyst remains classified.
+
+    3. **The Great Collapse of 2098**:
+       - Original Event: Averted by collective global efforts.
+       - Altered Event: Initiated as a 'necessary reset' for resource control.
+
+    4. **Operation Silent Pulse**:
+       - Purpose: Culling unauthorized anomalies discovered in the timeline.
+       - Impact: Hundreds of key individuals and events erased since 2035.
+
+    WARNING:
+    Unauthorized viewing of this material is a breach of security protocol. 
+    This terminal will self-lock in 10 seconds.
+
+    ==========================================     
+                
+                </pre>
+        </div>`;
+    } else {
+        document.getElementById("output").textContent = "Access Denied. Get out.";
+    }
+}
+</script>
+<script>
+    // Set a timeout to hide the flash screen and show the main content
+    window.onload = function() {
+        setTimeout(() => {
+            document.getElementById('flash-screen').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }, 10); // Adjust the duration (in milliseconds) as needed
+    };
+</script>
+
+</body>

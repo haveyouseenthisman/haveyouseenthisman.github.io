@@ -94,7 +94,9 @@
     background-color:grey
 }
 </style>
-
+<div id="flash-screen">
+    <img src="harshul.png" alt="Flash Image"> <!-- Replace with your image -->
+</div>
 <div class="topnav">
 	<a class="active" href="hmpge.html">Homepage</a>
 	<a href="deltarune.html">Deltarune</a>
@@ -112,4 +114,13 @@
     <p style="color: black; font-size: x-small;">404found</p>
 </div>
 </div>
+<script>
+    // Set a timeout to hide the flash screen and show the main content
+    window.onload = function() {
+        setTimeout(() => {
+            document.getElementById('flash-screen').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }, 10); // Adjust the duration (in milliseconds) as needed
+    };
+</script>
 </body>

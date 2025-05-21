@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADFGVX</title>
+    <style>
+        /* Flash screen styling */
+        #flash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            color: lime;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Courier New", Courier, monospace;
+            z-index: 9999;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Encoded text styling */
+        .encoded-text {
+            font-size: 1.5em;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        /* Main content is hidden initially */
+        #main-content {
+            display: none;
+        }
+
+        /* General body styling */
+        body {
+            margin: 0;
+            background-color: grey;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Flash screen with encoded text -->
+    <div id="flash-screen">
+        <div class="encoded-text">
+            SW4gYSBzaGFkb3cgd2hlcmUgdGhlIHByZXNlbnQgcGFzdCBpcyBjYXN0LA0KSSBzaW5nIGEgc29uZyBpbiBlY2hvZXMgdmFzdC4NClR3aWNlIEkgYW0gc3Bva2VuLCB5ZXQgb25jZSBJIGFtIGhlYXJkLA0KVGhlIGFuc3dlciBpcyB3b3Zlbiwgbm90IHNlZW4gbm9yIGluZmVycmVkLg0KDQpMb29rIHRvIHRoZSBmdXR1cmUsIHRoZW4gYmFjayB0byB0aGUgbm93LA0KQ291bnQgZXZlcnkgdGhpcmTigJRpZ25vcmUgd2hlcmUgYW5kIGhvdy4NCk15IG5hbWXigJlzIGluIHJldmVyc2Ugd2hlcmUgbGV0dGVycyBhbGlnbiwNCkEgbWlycm9y4oCZcyByZWZsZWN0aW9uIGlzIHRoZSB0cnVlc3Qgc2lnbi4NCg0KQWJzZW50IGJ1dCBwcmVzZW50LCBteSBzdGVwcyBhcmUgY29uZmluZWQsDQpCeSBzcGFjZXMgdW5zcG9rZW4sIHlldCBjbGVhcmx5IGRlZmluZWQuDQpUaGUga2V5IGlzIG5vdCB3cml0dGVuLCBidXQgd2hpc3BlcmVkIGluIGFpciwNClNvbHZlIG1lLCBhbmQgZmluZCBtZeKAlGlmIG9ubHkgeW91IGRhcmUu
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div id="main-content">
+        <p style="font-family: wingdings;">ゲーム</p>
+        <p>XDF AFF FDG FXX</p>
+    </div>
+
+    <script>
+        // Wait for 2 seconds before hiding the flash screen and showing the main content
+        window.onload = function() {
+            setTimeout(() => {
+                document.getElementById('flash-screen').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+            }, 200); // 200 ms = 2 seconds
+        };
+    </script>
+</body>
+</html>

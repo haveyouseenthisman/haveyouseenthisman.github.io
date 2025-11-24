@@ -119,10 +119,27 @@
     <img src="harshul.png" alt="Flash Image"> <!-- Replace with your image -->
 </div>
 <div class="topnav">
-	<a class="active" href="hmpge.html">Homepage</a>
-	<a href="poooeeemm.html">.___.</a>
-	<a href="lore.html">Lore</a>
+	<a class="active" href="index.html">Homepage</a>
 </div>
+<script>
+	function passwordInput() {
+		const correctInput = "egwar";
+		const userInput = prompt("Enter the password:");
+
+		if (userInput === null) {
+			// user pressed cancel
+			document.getElementById("output").textContent = "...";
+		} 
+		else if (userInput === correctInput) { 
+			// correct password → redirect
+			window.location.href = "poooeeemm.html";
+		} 
+		else {
+			// wrong password
+			document.getElementById("output").textContent = "Incorrect password.";
+		}
+	}
+</script>
 <br>
 <br>
 <br>
@@ -215,3 +232,4 @@ function askUser() {
 </script>
 
 </body>
+

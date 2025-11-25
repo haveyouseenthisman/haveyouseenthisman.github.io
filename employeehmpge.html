@@ -168,11 +168,11 @@
 <script>
 function askUser() {
     const correctPassword = "404found"; 
-    const userInput = prompt("Enter the password:");
+    const userAnswer = prompt("Enter the password:");
     
-    if (userInput === null) {
+    if (userAnswer === null) {
         document.getElementById("output").textContent = "...";
-    } else if (userInput === correctPassword) { 
+    } else if (userAnswer === correctPassword) { 
         document.getElementById("output").innerHTML = `
         <div style="background-color: black; color: white; padding: 20px; font-family: Arial, sans-serif;">
             <pre>
@@ -233,6 +233,7 @@ function askUser() {
 </script>
 
 </body>
+
 
 
 
